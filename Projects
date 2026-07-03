@@ -1,0 +1,38 @@
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <h1>Bo's Personal Site</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="projects.html">Projects</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+
+        <section>
+            <h2>Projects</h2>
+      <ul>
+        <li><a href="#">C++ Calculator</a></li>
+        <li><a href="#">Personal Website Development</a></li>
+        <li><a href="#">Video Game</a></li>
+      </ul>
+            <p>
+                My first project is Cpp calculator.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2026 Bo Baker</p>
+    </footer>
+
+</body>
