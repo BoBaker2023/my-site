@@ -1,0 +1,23 @@
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial;
+    background-color: #d3d3d3;
+}
+
+h1 {
+    color: #ffffff;
+    padding: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+
+}
+  
