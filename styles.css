@@ -28,3 +28,6 @@ nav a {
   
 }
   
+.projects-container {
+    display: flex
+}
