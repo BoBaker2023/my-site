@@ -1,10 +1,11 @@
 header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: navy;
-    color: white;
-    padding: 20px;
+
+    border: 3px solid red;
+}
 }
 
 body {
