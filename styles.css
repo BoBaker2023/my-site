@@ -2,10 +2,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background color: darkgrey;
+}
 
-    border: 3px solid red;
-}
-}
 
 body {
     font-family: Arial;
