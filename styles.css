@@ -1,4 +1,7 @@
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: navy;
     color: white;
     padding: 20px;
@@ -14,10 +17,13 @@ h1 {
     padding: 20px;
 }
 
+nav {
+    display: flex;
+}
 nav a {
   color: white;
   text-decoration: none;
   margin-right: 20px;
-
+  
 }
   
