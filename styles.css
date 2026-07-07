@@ -41,3 +41,7 @@ nav a {
     border-radius: 10px; 
     box-shadow: 0 4px 8px gray;
 }
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
