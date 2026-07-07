@@ -39,4 +39,5 @@ nav a {
     border-style: solid;
     border-color: black;
     border-radius: 10px; 
+    box-shadow: 0 4px 8px gray;
 }
