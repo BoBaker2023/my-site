@@ -2,18 +2,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background color: darkgrey;
-    color: blue;
+    background-color: var(--primary);
+    color: white;
 }
 
-
+:root {
+    --primary:#1e3a8a;
+    --secondary:#f59e0b;
+    --background:#f3f4f6;
+    --text:#111827;
+    --light:#ffffff;
+}
 body {
     font-family: Arial;
-    background-color: #d3d3d3;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 h1 {
-    color: #ffffff;
+    color: var(--light);
     padding: 20px;
 }
 
@@ -21,7 +28,7 @@ nav {
     display: flex;
 }
 nav a {
-  color: white;
+  color: var(--secondary);
   text-decoration: none;
   margin-right: 20px;
   
@@ -33,15 +40,20 @@ nav a {
 }
 
 .project-card {
-    background-color: white;
+    background-color: var(--background);
     padding: 20px;
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid var(--text);
     border-radius: 10px;
-    box-shadow: 0 4px 8px gray;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2;
 
     transition: transform 0.2s ease;
 }
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -55,10 +67,7 @@ td {
 }
 
 th {
-    background: navy;
-    color: white;
+    background: var(--background);
+    color: var(--text);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
