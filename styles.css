@@ -28,4 +28,11 @@ nav a {
   
 .projects-container {
     display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
 }
