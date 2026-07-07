@@ -41,6 +41,22 @@ nav a {
 
     transition: transform 0.2s ease;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: navy;
+    color: white;
+}
 
 .project-card:hover {
     transform: translateY(-5px);
