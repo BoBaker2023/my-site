@@ -67,9 +67,9 @@ nav a {
 .project-card {
     background-color: var(--background);
     padding: 20px;
-    margin: 20px;
-    border: 2px solid var(--text);
-    border-radius: 12px;
+    margin: 10px;
+    border: 1px solid var(--text);
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     box-sizing: content-box;
     transition: transform 0.2s ease;
