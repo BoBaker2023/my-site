@@ -84,6 +84,9 @@ nav a {
     margin: 5px;
     display: inline;
 }
+.highlight {
+    background: gold;
+}
 
 table {
     width: 100%;
