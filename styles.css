@@ -85,7 +85,9 @@ nav a {
     display: inline;
 }
 .highlight {
-    display: block;
+    display: inline;
+    width: 300px;
+    height: 100px;
     background: gold;
 }
 
