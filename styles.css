@@ -9,6 +9,10 @@ header {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary:#1e3a8a;
     --secondary:#f59e0b;
@@ -60,11 +64,26 @@ nav a {
     font-size: 18px;
     font-weight: 500;
     transition: color 0.3s ease;
-  
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary);
+    transition: width 0.3s ease;
 }
 
 nav a:hover {
     color: red;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
   
 .projects-container {
@@ -81,7 +100,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     box-sizing: border-box;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .badge {
@@ -96,6 +115,8 @@ nav a:hover {
 
 .project-card:hover {
     transform: translateY(-5px) scale(1.05);
+    
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
 .box {
     border: 2px solid black;
