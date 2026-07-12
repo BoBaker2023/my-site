@@ -59,7 +59,12 @@ nav a {
     margin-right: 20px;
     font-size: 18px;
     font-weight: 500;
+    transistion: color 0.3;
   
+}
+
+nav a:hover {
+    color: red;
 }
   
 .projects-container {
@@ -91,6 +96,7 @@ nav a {
 
 .project-card:hover {
     transform: translateY(-5px);
+    transform: scale(1.05);
 }
 .box {
     border: 2px solid black;
