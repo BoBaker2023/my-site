@@ -147,9 +147,10 @@ th {
     header{
         flex-direction:column;
         gap:15px;
+        padding: 15px;
     }
 
-    nav ul{
+    nav {
         flex-direction:column;
         align-items:center;
     }
@@ -161,5 +162,9 @@ th {
     h1{
         font-size:2rem;
     }
+
+    .projects-container{
+    flex-direction:column;
+}
 
 }
