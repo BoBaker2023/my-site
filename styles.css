@@ -75,7 +75,7 @@ nav a {
     border: 1px solid var(--text);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    box-sizing: content-box;
+    box-sizing: border-box;
     transition: transform 0.2s ease;
 }
 
@@ -86,7 +86,7 @@ nav a {
 
     background-color: gold;
     padding: 5px 10px;
-    border-radius:
+    border-radius: 8px;
 }
 
 .project-card:hover {
