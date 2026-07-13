@@ -4,4 +4,4 @@ console.log("Hello World!);
 
 console.log("Welcome to my website!");
 
-console.log("Learning JavaScript!"'
+console.log("Learning JavaScript!");
