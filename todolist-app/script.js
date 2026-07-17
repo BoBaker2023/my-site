@@ -1,4 +1,4 @@
-let tasks = [];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 const taskInput = document.getElementById("taskInput");
 const addTaskButton = document.getElementById("addTaskButton");
@@ -16,7 +16,7 @@ if (taskInput.value === "") {
         text: taskInput.value,
         completed: false
     });
-
+    saveTasks();
     renderTasks();
     taskInput.value = "";
 });
@@ -36,6 +36,7 @@ function renderTasks() {
         
         deleteButton.addEventListener("click", function () {
         tasks.splice(i,1);
+        saveTasks();
         renderTasks();
 });
         const completeButton = document.createElement("button");
@@ -44,6 +45,7 @@ function renderTasks() {
         
         completeButton.addEventListener("click", function () {
         tasks[i].completed = !tasks[i].completed;
+        saveTasks();
         renderTasks();
 });
 
@@ -57,7 +59,9 @@ taskList.appendChild(li);
 
 }
     
-    taskCounter.textContent = `Tasks Remaining: ${tasks.length}`
+    const remainingTasks = tasks.filter(task => !task.completed).length;
+
+taskCounter.textContent = `Tasks Remaining: ${remainingTasks}`;
 }
 
 taskInput.addEventListener("keydown", function(event) {
@@ -65,3 +69,9 @@ taskInput.addEventListener("keydown", function(event) {
         addTaskButton.click();
     }
 });
+
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+renderTasks();
