@@ -72,7 +72,6 @@ taskInput.addEventListener("keydown", function(event) {
 
 function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
-    console.log(localStorage.getItem("tasks"));
 }
 
 renderTasks();
