@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    background: #f8f8f8;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complete {
+    background: green;
+    color: white;
+}
+
+.delete {
+    background: red;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: gray;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.complete {
+    background-color: green;
+    color: white;
+}
+
+.complete:hover {
+    opacity: 0.8;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.delete:hover {
+    opacity: 0.8;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
